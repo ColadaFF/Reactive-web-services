@@ -7,10 +7,9 @@ import lombok.EqualsAndHashCode;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Builder(setterPrefix = "with")
-public class SendMessageRequest extends RoomOperation {
+public class SendMessageRequest {
     UUID roomId;
     String body;
     LocalDateTime dateTime;

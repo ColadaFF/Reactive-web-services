@@ -1,6 +1,6 @@
 package co.ff.ias.rws.configuration;
 
-import co.ff.ias.rws.adapters.out.WebsocketConnectionHandler;
+import co.ff.ias.rws.adapters.in.WebsocketConnectionHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.HandlerMapping;

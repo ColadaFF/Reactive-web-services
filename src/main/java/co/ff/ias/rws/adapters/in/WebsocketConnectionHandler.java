@@ -1,4 +1,4 @@
-package co.ff.ias.rws.adapters.out;
+package co.ff.ias.rws.adapters.in;
 
 import org.springframework.web.reactive.socket.WebSocketHandler;
 import org.springframework.web.reactive.socket.WebSocketSession;

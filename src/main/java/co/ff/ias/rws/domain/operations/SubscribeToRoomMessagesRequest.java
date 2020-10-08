@@ -6,9 +6,10 @@ import lombok.EqualsAndHashCode;
 
 import java.util.UUID;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
 @Builder(setterPrefix = "with")
-public class SubscribeToRoomMessagesRequest extends RoomOperation {
+public class SubscribeToRoomMessagesRequest {
     UUID roomId;
+
+
 }
