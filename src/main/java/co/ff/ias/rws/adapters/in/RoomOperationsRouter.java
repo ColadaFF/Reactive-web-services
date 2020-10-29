@@ -82,9 +82,11 @@ public class RoomOperationsRouter {
     private HandlerFunction<ServerResponse> postRequest(CreateRoomUseCase createRoomUseCase) {
         return request -> {
             return request.bodyToMono(CreateRoomRequest.class)
+                    .doOnError(Throwable::printStackTrace)
                     .flatMap(createRoomUseCase::process)
                     .flatMap(createRoomResponse -> ok()
-                            .bodyValue(createRoomResponse)
+                            .contentType(MediaType.APPLICATION_JSON)
+                            .body(Mono.just(createRoomResponse), CreateRoomResponse.class)
                     );
         };
     }

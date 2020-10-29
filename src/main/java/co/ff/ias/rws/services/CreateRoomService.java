@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
+import java.util.Objects;
 import java.util.UUID;
 
 @Service
@@ -18,6 +19,7 @@ public class CreateRoomService implements CreateRoomUseCase {
 
     @Override
     public Mono<CreateRoomResponse> process(CreateRoomRequest input) {
+        Objects.requireNonNull(input, "");
         Room room = Room.builder()
                 .withId(UUID.randomUUID())
                 .withName(input.getRoomName())

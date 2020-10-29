@@ -11,6 +11,6 @@ import java.util.UUID;
 public class Message {
     UUID roomId;
     UUID messageId;
-    String content;
+    MessageContent content;
     LocalDateTime dateTime;
 }

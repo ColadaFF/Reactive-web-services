@@ -1,4 +1,4 @@
-package co.ff.ias.rws;
+package co.ff.ias;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

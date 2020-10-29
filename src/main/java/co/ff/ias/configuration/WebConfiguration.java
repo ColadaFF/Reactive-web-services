@@ -1,4 +1,4 @@
-package co.ff.ias.rws.configuration;
+package co.ff.ias.configuration;
 
 import co.ff.ias.rws.adapters.in.WebsocketConnectionHandler;
 import org.springframework.context.annotation.Bean;
